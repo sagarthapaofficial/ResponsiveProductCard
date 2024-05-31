@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      div.flexContainer {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      div.flex-item2 {
+        padding: 0 1rem 0 1rem;
+      }
+
+      .price {
+        display: flex;
+        margin-bottom: 2rem;
+      }
+
+      .productImage {
+        width: 100%;
+        height: auto;
+      }
+      p {
+        font-family: "Montserrat", sans-serif;
+      }
+      .originalPrice {
+        padding-left: 1rem;
+        align-content: center;
+      }
+
+      .addBtn {
+        background-color: green;
+        width: 100%;
+        height: 3rem;
+        border-radius: 0.5rem;
+        font-size: 1.3rem;
+        color: white;
+        font-weight: bold;
+        align-items: center;
+      }
+
+      .cart {
+        height: 1.2rem;
+        max-width: 6rem;
+        padding-right: 0.5em;
+      }
+
+      @media screen and (min-width: 720px) {
+        div.flexContainer {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .productImage {
+          width: 100%;
+          height: auto;
+        }
+
+        div.flex-item {
+          flex: 1;
+        }
+
+        div.flex-item2 {
+          padding: 0 2rem 0 2rem;
+          flex: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexContainer">
+      <div class="flex-item">
+        <img
+          class="productImage"
+          src="./images/image-product-desktop.jpg"
+          alt="productImage"
+        />
+      </div>
+
+      <div class="flex-item2">
+        <p>PERFUME</p>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="price">
+          <div style="font-size: 2rem; color: green; font-weight: bold">
+            $149.99
+          </div>
+          <div class="originalPrice"><s>$169.99</s></div>
+          <!--s tag is used for strikethough on prices-->
+        </div>
+
+        <button class="addBtn">
+          <img class="cart" src="./images/cart.png" alt="productImage" />Add to
+          Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Sagar Thapa</a>.
+    </div>
+  </body>
+</html>
